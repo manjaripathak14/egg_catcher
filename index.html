@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Grab The Egg - Catch falling eggs using your fingers.">
+
+    <title>Grab The Egg 🥚</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="home-page">
+
+    <!-- BACKGROUND DECORATION -->
+
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+
+    <div class="sparkle sparkle-1">✦</div>
+    <div class="sparkle sparkle-2">✦</div>
+    <div class="sparkle sparkle-3">✦</div>
+
+
+    <!-- LEFT SIDE -->
+
+    <section class="left-decoration">
+
+        <div class="chicken-wrapper">
+
+            <img
+                src="assets/chicken.png"
+                alt="Cartoon chicken"
+                class="chicken-image"
+            >
+
+            <div class="chicken-label">
+                🐔 LET'S PLAY!
+            </div>
+
+        </div>
+
+
+        <!-- Egg collection -->
+
+        <div class="egg-display">
+
+            <div class="egg-card white-card">
+                <img
+                    src="assets/eggw.png"
+                    alt="White egg"
+                >
+            </div>
+
+            <div class="egg-card brown-card">
+                <img
+                    src="assets/eggb.png"
+                    alt="Brown egg"
+                >
+            </div>
+
+            <div class="egg-card gold-card">
+                <img
+                    src="assets/egggo.png"
+                    alt="Golden egg"
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAIN HERO -->
+
+    <section class="hero-section">
+
+        <!-- Game badge -->
+
+        <div class="game-badge">
+            <span class="badge-dot"></span>
+            FINGER CONTROLLED GAME
+        </div>
+
+
+        <!-- TITLE -->
+
+        <div class="title-container">
+
+            <span class="title-spark">✦</span>
+
+            <h1>
+                GRAB
+                <span>THE EGG</span>
+            </h1>
+
+            <span class="title-spark">✦</span>
+
+        </div>
+
+
+        <!-- Subtitle -->
+
+        <p class="subtitle">
+            Move your fingers.
+            <br>
+            Catch the eggs!
+        </p>
+
+
+        <!-- GAME PREVIEW -->
+
+        <div class="game-preview">
+
+            <!-- Falling golden egg -->
+
+            <div class="preview-egg">
+
+                <img
+                    src="assets/egggo.png"
+                    alt="Golden egg"
+                >
+
+                <span class="points gold-points">
+                    +20
+                </span>
+
+            </div>
+
+
+            <!-- Hands -->
+
+            <img
+                src="assets/hands.png"
+                alt="Hands controlling the game"
+                class="hands-image"
+            >
+
+
+            <!-- Basket image -->
+
+            <img
+                src="assets/basket.png"
+                alt="Basket used to catch eggs"
+                class="basket-image"
+            >
+
+
+            <!-- White egg -->
+
+            <div class="floating-score score-five">
+
+                <img
+                    src="assets/eggw.png"
+                    alt="White egg"
+                >
+
+                <span>
+                    +5
+                </span>
+
+            </div>
+
+
+            <!-- Brown egg -->
+
+            <div class="floating-score score-ten">
+
+                <img
+                    src="assets/eggb.png"
+                    alt="Brown egg"
+                >
+
+                <span>
+                    +10
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- FUN INSTRUCTIONS -->
+
+        <div class="instruction-strip">
+
+            <!-- Heading -->
+
+            <div class="instruction-heading">
+
+                <span class="mini-game-icon">
+                    🎮
+                </span>
+
+                <div>
+
+                    <strong>
+                        READY TO PLAY?
+                    </strong>
+
+                    <small>
+                        Here's how it works!
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Instruction cards -->
+
+            <div class="instruction-cards">
+
+                <!-- Camera -->
+
+                <div class="instruction-card camera-card">
+
+                    <span class="instruction-icon">
+                        📷
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Camera ON
+                        </strong>
+
+                        <small>
+                            Show your fingers
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Move -->
+
+                <div class="instruction-card">
+
+                    <span class="instruction-icon">
+                        👆
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            MOVE
+                        </strong>
+
+                        <small>
+                            Follow the eggs
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Catch -->
+
+                <div class="instruction-card">
+
+                    <span class="instruction-icon">
+                        🥚
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            CATCH!
+                        </strong>
+
+                        <small>
+                            Score points
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PLAY BUTTON -->
+
+        <button
+            class="play-button"
+            id="playButton"
+            type="button"
+        >
+
+            <span class="play-text">
+                PLAY NOW
+            </span>
+
+            <span class="play-arrow">
+                ▶
+            </span>
+
+        </button>
+
+
+        <p class="camera-note">
+            🎥 Camera access will be requested when you start
+        </p>
+
+    </section>
+
+
+    <!-- RIGHT SIDE -->
+
+    <aside class="right-decoration">
+
+        <!-- EGG VALUES -->
+
+        <div class="score-preview">
+
+            <div class="score-top">
+
+                <span>
+                    EGG VALUES
+                </span>
+
+                <span>
+                    ★
+                </span>
+
+            </div>
+
+
+            <!-- White -->
+
+            <div class="score-row">
+
+                <img
+                    src="assets/eggw.png"
+                    alt="White egg"
+                >
+
+                <div>
+
+                    <span class="egg-name">
+                        WHITE
+                    </span>
+
+                    <strong>
+                        +5
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Brown -->
+
+            <div class="score-row">
+
+                <img
+                    src="assets/eggb.png"
+                    alt="Brown egg"
+                >
+
+                <div>
+
+                    <span class="egg-name">
+                        BROWN
+                    </span>
+
+                    <strong>
+                        +10
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Golden -->
+
+            <div class="score-row">
+
+                <img
+                    src="assets/egggo.png"
+                    alt="Golden egg"
+                >
+
+                <div>
+
+                    <span class="egg-name">
+                        GOLDEN
+                    </span>
+
+                    <strong>
+                        +20
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MISS CARD -->
+
+        <div class="broken-egg-card">
+
+            <img
+                src="assets/broken-egg.png"
+                alt="Broken egg"
+            >
+
+            <div>
+
+                <strong>
+                    MISS!
+                </strong>
+
+                <span>
+                    Don't let it fall!
+                </span>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Bottom decoration -->
+
+    <div class="ground-decoration"></div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grab The Egg</title>
+    <link rel="stylesheet" href="game.css">
+
+    <!-- MediaPipe libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="game-container">
+
+        <header class="game-header">
+            <h1>🥚 Grab The Egg</h1>
+
+            <div class="stats">
+                <div class="stat-box">
+                    <span>Score</span>
+                    <strong id="score">0</strong>
+                </div>
+
+                <div class="stat-box">
+                    <span>Lives</span>
+                    <strong id="lives">❤️ ❤️ ❤️</strong>
+                </div>
+            </div>
+        </header>
+
+        <p id="gameMessage">Click Start Game to begin!</p>
+
+        <section class="game-area" id="gameArea">
+
+            <!-- Visible front camera -->
+            <div class="camera-container">
+                <video id="webcam" autoplay playsinline muted></video>
+                <div class="camera-label">YOU 🎥</div>
+            </div>
+
+            <!-- Eggs and baskets will appear over the camera -->
+            <img
+                src="assets/basket.png"
+                id="basket1"
+                class="basket"
+                alt="First basket"
+            >
+
+            <img
+                src="assets/basket.png"
+                id="basket2"
+                class="basket"
+                alt="Second basket"
+            >
+
+            <!-- Game over screen -->
+            <div id="gameOverScreen" class="game-over hidden">
+                <h2>Game Over!</h2>
+                <p>Your final score: <strong id="finalScore">0</strong></p>
+                <p>Max Score: <span id="maxScore">0</span></p>
+                <button id="restartButton">Play Again</button>
+            </div>
+        </section>
+        
+
+        <div class="game-controls">
+            <button id="startButton">Start Game</button>
+            <button id="restartButton2">Restart</button>
+            <button id="backButton">Back</button>
+        </div>
+
+        <p id="cameraStatus">Camera: Not started</p>
+
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>
